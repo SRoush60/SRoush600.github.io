@@ -28,7 +28,7 @@ function average_gpa(){
         denominator+=credit_hours;
     }
     if(n>0){
-        document.getElementById("average_gpa").innerHTML='Average GPA: '+ numerator/denominator;
+        document.getElementById("average_gpa").innerHTML='You have a GPA of '+ numerator/denominator;
         document.getElementById("average_gpa").style.display="block";
     }
 }
