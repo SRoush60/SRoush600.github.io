@@ -12,7 +12,7 @@ function gen_input_fields(){
         <option value='1.0'>D</option> \
         <option value='0.0'>F</option> \
         </select></td></tr> \
-        <tr><td>Credit Hours<td></td><td><input id='ch"+i+"' type='number' min=1 value=1 class='search w-100'></td></tr>";
+        <tr><td>Credit Hours<td></td><td><input id='ch"+i+"' type='number' min=1 max=8 value=1 class='search w-100'></td></tr>";
     }
     $("#entries").html(in_fields);
     if(n>0)document.getElementById("submit_entries").style.display="block";
