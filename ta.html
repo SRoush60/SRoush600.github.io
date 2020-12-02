@@ -1,0 +1,73 @@
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <title>Teacher Assistant Application </title>
+
+        <meta content="width=device-width , initial-scale=1" name="viewport">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            h2 {
+                text-align: center;
+            }
+            .main-content{
+                height: 700px;
+                float: left;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position:top bottom;
+                background-color: orangered;
+            }
+        </style>
+</head>
+<body>
+<nav class=".nav-bar">
+    <ol>
+        <li class="nav"><a href="index.html">Home</a></li>
+        <li class="nav"><a href="desc.html">Description</a></li>
+        <li class="nav"><a href="ta.html">Teaching Assistant</a></li>
+       <li class="nav"><a href="gpa.html">GPA</a></li>
+    </ol>
+    </nav>
+    <header class="head">
+       <img alt="AUM logo" src="img/logo.png">
+    </header>
+    <aside class="sidebar">
+    <h1>Announcements</h1>
+    <p><li> Social distancing and appropriate masks required on campus with personal hand sanitizer dispensers reccommended due to COVID pandemic protocols.</li><br>
+    <li>Last days of classes for fall semester are upon us, finals are due to start on Monday, December 7th.</li><br>
+    <li>Students of AUM need to remember to do their daily health check with GuideSafe.</li><br>
+    <li>Please avoid using vending machines if at all possible, and please avoid sharing drinks with other students on campus.</li><br>
+    <li>Fitness Friday will still be held in the quad, as usual.</li><br>
+    <li>We hope you have a good Holliday break! Registration for Spring is open.</li>
+    </p>
+</aside>
+    <div class="main-content">
+        <form name="myform" action="application_data.html" method="get">
+            <h2>Teaching Assistant Form</h2>
+            <label for="firstname">First name:</label>
+            <input type="text" name="firstname" id="firstname" autofocus="" required=""><br>
+            <label for="midname">Middle name:</label>
+            <input type="text" name="midname" id="midname" required=""><br>
+            <label for="lastname">Last name:</label>
+            <input type="text" name="lastname" id="lastname" required=""><br>
+            <label for="stuid">Student ID: </label>
+            <input type="text" name="stuid" id="stuid" required=""><br>
+            <label for="GPA">Grade Point Average:</label>
+            <input type="number" name="GPA" id="GPA" placeholder="0.00" step=".01" required="" required pattern="\d{1}.\d{2}" min="0.00" max="4.00"><br>
+            <label for="sex">Gender:</label>
+            <input type="text" name="sex" id="sex" required=""><br>
+            <label for="date">Submission Date:</label>
+            <input type="text" name="date" id="date"><br>
+            <label for="comments">Comments:</label>
+            <input type="text" name="comments" id="comments"><br>
+            <h2>Thank you for applying!</h2>
+            <input type="submit" name="button" id="button" value="Submit">
+            <input type="reset" name="reset" id="reset"> 
+        </form>
+    </div>
+<footer class="footer">
+        <p>Scott Roush Web Development</p>
+        <p>All copyrights reserved.</p> 
+</footer>
+</body></html>

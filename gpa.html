@@ -1,0 +1,69 @@
+<html>
+<head>
+        <title>GPA Calculator</title>
+
+        <meta content="width=device-width , initial-scale=1" name="viewport">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="gpacalc.js"></script>
+     <style>
+        .main-content{
+            height: 700px;
+            float: left;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position:top bottom;
+            background-color: orangered;
+         }
+    </style>
+</head>
+<body>
+<nav class=".nav-bar">
+    <ol>
+        <li class="nav"><a href="index.html">Home</a></li>
+        <li  class="nav"><a href="desc.html">Description</a></li>
+        <li  class="nav"><a href="ta.html">Teaching Assistant</a></li>
+       <li  class="nav"><a href="gpa.html">GPA</a></li>
+    </ol>
+</nav>
+<header class="head">
+       <img alt="AUM logo" src="img/logo.png">
+</header>
+<aside class="sidebar">
+    <h1>Announcements</h1>
+    <p><li> Social distancing and appropriate masks required on campus with personal hand sanitizer dispensers reccommended due to COVID pandemic protocols.</li><br>
+    <li>Last days of classes for fall semester are upon us, finals are due to start on Monday, December 7th.</li><br>
+    <li>Students of AUM need to remember to do their daily health check with GuideSafe.</li><br>
+    <li>Please avoid using vending machines if at all possible, and please avoid sharing drinks with other students on campus.</li><br>
+    <li>Fitness Friday will still be held in the quad, as usual.</li><br>
+    <li>We hope you have a good Holliday break! Registration for Spring is open.</li>
+    </p>
+</aside>
+<div class="main-content"> 
+                     <center><h2>GPA Calcuator</h2></center>
+                <center><table class="w-100 form">
+                    <tr><td>Number of entries(Subjects):<td></td><td><input id="n_entries" type="number" min=0 class="search w-100"></td></tr>
+                    
+                </table>
+                <center>
+                    
+                    <br><br>
+                <input type="button" value="Get Entries" class="btn shadow" onclick="gen_input_fields();">
+               </center><br>
+                <table class="w-100 form table-data" id="entries">
+                    
+                </table>
+                <br><br>
+                <center><input id='submit_entries' type="button" value="Get Average Gpa" hidden class="btn shadow" onclick="average_gpa();"></center>
+                <center><p id='average_gpa' hidden></p>
+                <br><br>
+                </center>
+    </center>
+</div>
+<footer class="footer">
+        <p>Scott Roush Web Development</p>
+        <p>All copyrights reserved.</p> 
+</footer>
+</body>
+</html>
