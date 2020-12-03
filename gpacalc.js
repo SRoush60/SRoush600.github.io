@@ -1,5 +1,5 @@
 var n=0
-function gen_input_fields(){
+function make_input_fields(){
     n=parseInt($("#n_entries").val());
     console.log(n);
     in_fields="";
